@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="assets/css/responsive.css" />
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		
     </head>
     <body data-spy="scroll" data-target="#main_navbar">
         <!--[if lt IE 8]>
@@ -62,15 +63,18 @@
 
         <!--Home page style-->
         <header id="home" class="home">
+			<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Sjkrb4L2wRA',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>
             <div class="overlay">
                 <div class="container">
                     <div class="row">
                         <div class="home-wrapper">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="home-content text-center">
-									<img src="assets/images/biglogo.png"/>
-                                    <h1>Строительная компания "Ильмера"</h1>
-                                    <h2>На рынке строительных услуг с 2008 г.</h2>
+									
+                                    <h1>Строительная компания Ильмера</h1>
+									<div class="separator"></div>
+									<h2>На рынке строительных услуг с 2008 г.</h2>
+									
                                 </div>
                             </div>
                         </div>
@@ -80,7 +84,7 @@
         </header>
 
         <!-- Sections -->
-        <section id="service" class="service sections">
+        <section id="service" class="service darkbg sections">
             <div class="container">
                 <div class="heading text-center">
                     <h1>Мы предлогаем услуги</h1>
@@ -213,7 +217,7 @@
         </section><!-- End of portfolio-one Section -->
 
         <!-- Sections -->
-        <section id="brand" class="brand sections">
+        <section id="brand" class="brand darkbg sections">
             <div class="container">
                 <div class="heading text-center">
                     <h1>Наши постоянный клиенты</h1>
@@ -483,7 +487,10 @@
         <script src="assets/js/vendor/bootstrap.min.js"></script>
         <script src="assets/js/vendor/isotope.min.js"></script>
         <script src="assets/js/plugins.js"></script>
-         <script src="assets/js/jquery.magnific-popup.js"></script>
+        <script src="assets/js/jquery.magnific-popup.js"></script>
         <script src="assets/js/main.js"></script>
+		<script src="assets/js/device.min.js"></script> <!--OPTIONAL JQUERY PLUGIN-->
+		<script src="assets/js/jquery.mb.YTPlayer.js"></script>
+		<script src="assets/js/custom.js"></script>
     </body>
 </html>
